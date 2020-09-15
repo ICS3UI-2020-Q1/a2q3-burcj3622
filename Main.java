@@ -1,6 +1,7 @@
+import java.util.Scanner;
 /**
- *
- * @author 
+ * user will see the numbers they input in aceding order 
+ * @author jason
  */
 public class Main {
 
@@ -9,7 +10,25 @@ public class Main {
    * @param args the command line arguments
    */
   public static void main(String[] args) {
-    // TODO code application logic here
+    // adding scanner for user input
+    Scanner input = new Scanner(System.in);
     
+    // asks user for input
+    System.out.println("Please enter an integer:");
+    
+    //lets user input number
+    int integer = input.nextInt();
+
+    //asks user for second number 
+    System.out.println("Please enter another integer:");
+   
+    //lets user input second number 
+    int number = input.nextInt();
+  
+    if( integer > number){
+    System.out.println( "Your numbers in ascending order are " + integer +"," +number);}
+    
+    else if (integer > number);{
+    System.out.println( "Your numbers in ascending order are " + number +"," +integer);}
   }
 }
